@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  width: 100%;
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(174,179,82,1) 49%, rgba(252,70,107,1) 98%);
+}
+.mai_container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 90%;
+  /* height: 200vh; */
+  padding-bottom: 50px;
+  margin: auto;
+  margin-top: 120px;
+}
+@media screen and (max-width: 980px){
+  .mai_container{
+    width: 96%;
+  }
+}

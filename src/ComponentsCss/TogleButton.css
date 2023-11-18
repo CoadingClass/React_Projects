@@ -1,0 +1,59 @@
+.togle_button{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.togle_button button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 40px;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 8px;
+  font-size: 18px;
+  background: rgb(0, 200, 255);
+  position: relative;
+  min-width: 180px;
+  padding: 0;
+  cursor: pointer;
+}
+.togle_button button:hover{
+  background-color: aquamarine;
+}
+
+.togle_button button .fa-arrow-left{
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+button:hover .fa-arrow-left{
+  transition: .4s;
+  left: 20%;
+}
+.togle_button button .fa-arrow-right{
+  position: absolute;
+  right: 25%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+button:hover .fa-arrow-right{
+  transition: .4s;
+  right: 20%;
+}
+@media screen and (max-width: 980px) {
+  .togle_button button .fa-arrow-left{
+    left: 18%;
+  }
+  button:hover .fa-arrow-left{
+    left: 14%;
+  }
+  .togle_button button .fa-arrow-right{
+    right: 25%;
+  }
+  button:hover .fa-arrow-right{
+    right: 20%;
+  }
+}
